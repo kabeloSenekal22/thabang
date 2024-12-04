@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <link rel="stylesheet" href="home.css">
+    <style>
+        body div:nth-child(1){
+            margin-left: 1%;
+            font-size: 1.3rem;
+        }
+        div:nth-child(1) ol{
+            margin-left: 10%;
+            font-size: 1.5rem;
+        }
+        body div:nth-child(1){
+            height: 100vh;
+        }
+    </style>
+    <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-E2FNR8K90S"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+        
+          gtag('config', 'G-E2FNR8K90S');
+        </script>
+</head>
+<body>
+    
+    <div>
+    <ol>   
+        <!-- <li style="color: red;">Remember to discribe your variables on IPO table</li> -->
+        <li style="color: rgb(137, 0, 0);">Do not forget to comment</li>
+        <li>Read the Questions well</li>
+        <li>Every information is important</li>
+    </ol>
+    <div>
+        <h1>Coding tips</h1>
+        <h2 style="color: rgb(137, 0, 0);">
+            Common errors highly impossible to spot
+            <ol>
+                <li>*<=* pay attention to that not *=<*</li>
+                <li>*;* semicolon after writing conditions</li>
+                <li>*,* coma at the end after declaring multiple variables on the same data type</li>
+                <li>*.equals()* For comparing string not *==*</li>
+            </ol>
+        </h2>
+        <h2>If you encounter a menu question like this</h2>
+        <li>1 Pap + wors &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;R100.00</li>
+        <li>2 Pap + chicken  &nbsp;&nbsp;R90.00</li>
+        <li>3 Rice + Chicken R75.00</li>
+        Do this 
+        <li><br>
+            System.out.println("1 Pap + wors\t\t"+df.format(PAP_WORS)+ <br>
+            "\n2 Pap + chicken\t"+df.format(PAP_CHICK)+ <br>
+            "\n3 Rice + Chicken\t"+df.format(RICE_CHICK));
+        </li>
+        
+
+        <!-- <h2>
+            Escape sequences
+            <ol>
+                <li>\t for tab(big space)</li>
+                <li>\n for new line</li>
+                <li>\" for double quotes</li>
+                <li>\' for single quote</li>
+            </ol> <br>
+            Formatinf values <br><br>
+            import java.text.DecimalFormart; **from text**<br>
+            DecimalFormart Object = new DecimalFormart("R#,##0.00"); Depends on the format <br><br>
+            To format <br> Object.format(variable)
+        </h2> -->
+        <!-- <h1>Conditional statements</h1>
+        <h2>We have 2 different conditional statements</h2>
+        <h2>
+            <ol>
+                <li>
+                    if-statement, it is devided into 4 different formart
+                    <ol>
+                        <li>if(){}</li>
+                        <li>if(){} else{}</li>
+                        <li>if(){} else-if(){} &RightArrowBar; the else-if(){} can be as may as the condition required</li>
+                        <li>if(){} else-if(){} else{} &RightArrowBar; the else-if(){} can be as may as the condition required</li>
+                    </ol>
+                </li>
+                <li>
+                    switch-cases, id is devided in 2 
+                    <ol>
+                        <li>switch(variable){case "value" : //statements here;}</li>
+                        <li>switch(variable){<br>case "value" : //statements here; <br>break; <br>default : //statements here;}</li>
+                        <li>You can have *case "value":* as many as you want</li>
+                        <li>the variable in *switch(variable)* is the one that will be used to test agaist the values on each case</li>
+                    </ol>
+                </li>
+                <li>
+                    <h3>when and where to use the conditional statements</h3>
+                    <ol>
+                        <li>if-statements</li>
+                        <ol>
+                            <li>Range values if(mark>=50 && mark<75){} in switch you will have multiple cases for each value</li>
+                            <li>You can have as may conditions as required</li>
+                        </ol>
+                        <li>
+                            switch-cases
+                        </li>
+                        <ol>
+                            <li>For menus 
+                                <br>case 1://chose 1;
+                                <br>beak; 
+                                <br>case 3: //chose 3;
+                            </li>
+                            <li>For 2 or more values resulting to same output 
+                                <br> case 1: case 2: //1 or 2 was selected;break;
+                            </li>
+                        </ol>
+                    </ol>
+                </li>
+            </ol>
+        </h2> -->
+        <!-- <H1>Did you know?</H1>
+        <H1>Loops</H1>
+        <h2>
+            We have 3 loops
+            <ol>
+                <li>
+                    for Loop
+                    <ol>
+                        <li>We use for-loop if we know the number of time it will loop.</li>
+                        <li>Syntax <br>*for(int i=1;i<=5;i++){ //your statements here}*<br>It will loop 5 times</li>
+                    </ol>
+                </li>
+                <li>
+                    while Loop
+                    <ol>
+                        <li>We mostly use it to restrict, preventing user from entering invalid values <br> exaple <br>Enter your test mark :102 <br>Invalid test mark!!! Enter your test mark</li>
+                        <li>Also to excercute certain code if the condition is true</li>
+                        <li>Syntax <br> while(mark<0||mark>100){//Your statements here} <br> It will loop up until the mark value is inrange.</li>
+                    </ol>
+                </li>
+                <li>
+                    do-while
+                    <ol>
+                        <li>We use it to reduce duplicates of statements, can be used to restrict user from entering invalid inputs</li>
+                        <li>use this loop to control invalid inputs only if the prompting text does not chage from the initial text <br>example <br> enter your age : -1 <br> enter your age : 18 <br> you can you this loop</li>
+                        <li>This loop excecute statements inside for the first time without meeting the conditions.</li>
+                        <li>Syntax <br> do{//your statements here}while(age<0); <br> It will loop if the age value is less than 0 <br>Do not forget to terminate after the while condition for this loop only</li>
+                    </ol>
+                </li>
+            </ol>
+        </h2> -->
+        <!-- <h2>We have 8 primitive ? which are:</h2>
+        <ol>
+            <li>byte</li>
+            <li>short</li>
+            <li>int</li>
+            <li>long</li>
+            <li>float</li>
+            <li>double</li>
+            <li>boolean</li>
+            <li>char</li>
+        </ol> -->
+        <br><br><br>
+        <!-- <h2>Damn Java is case sensetive🤦‍♂️ <br> We have to be careful when we are typing😒</h2> -->
+        <!-- <h1 class="info">Do not to forget to comment your code💡</h1> -->
+    </div>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <footer style="background-color: rgba(157, 204, 219, 0.7); text-align: center;">
+        <h2>2024 &copy All Rights Reserved Designed by Terrence Kgetedi</h2>
+        <p>Email: <a href="mailto:kgetediterrence@gmail.com" style="text-decoration: none; color: white; font-size: x-large;">kgetediterrence@gmail.com</a></p>
+        <p>Phone: <span style="color: white; font-size: x-large;"> +27692957367</span></p>
+        <p>WhatsApp<span style="color: white; font-size: x-large;"> +27692957367</span></p>
+    </footer>
+    <br><br><br><br><br>    <br><br><br><br><br><br><br><br>
+    <footer style="background-color: rgba(157, 204, 219, 0.7); text-align: center;">
+        <h2>2024 &copy All Rights Reserved Designed by Terrence Kgetedi</h2>
+        <p>Email: <a href="mailto:kgetediterrence@gmail.com" style="text-decoration: none; color: white; font-size: x-large;">kgetediterrence@gmail.com</a></p>
+        <p>Phone: <span style="color: white; font-size: x-large;"> +27692957367</span></p>
+        <p>WhatsApp<span style="color: white; font-size: x-large;"> +27692957367</span></p>
+    </footer>
+    <br><br><br><br><br>
+    <div class="bottom-buttons">
+        <button onclick="quizzes()">QUESTIONS</button>
+        <button onclick="notes()">NOTES</button>
+        <button onclick="home()">HOME</button>
+        <button onclick="videos()">VIDEOS</button>
+        <button onclick="documents()">DOCUMENTS</button>
+    </div> 
+
+    <script src="home.js"></script>
+</body>
+</html>

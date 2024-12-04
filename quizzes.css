@@ -1,0 +1,157 @@
+html{
+    background-image: url("IMG-20240412-WA0064.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+center button{
+    width: 200px;
+    height: 50px;
+    font-size: 40px;
+    margin: 1%;
+    border-radius: 10px;
+}
+.qBtn button{
+    border: 2px solid purple;
+}
+.Question{
+    background-image: linear-gradient(rgba(102, 21, 21,.4),rgba(10, 10, 75,1));
+    height: fit-content;
+    width: fit-content;
+    color: white;
+    padding: 3%;
+    margin: auto;
+}
+.Question h1:nth-child(3){
+    color: red;
+}
+.space{
+    height: 20vh;
+}
+center button:nth-child(1){
+    background-image: linear-gradient(to right,black, blue,black);
+    box-shadow: 0 0 5px black, 0 0 25px blue,0 0 20px black, 0 0 200px blue;
+    border-radius: 30px;
+    font-weight: bolder;
+}
+center button:nth-child(2){
+    background-image: linear-gradient(to right,black, green,black);
+    box-shadow: 0 0 5px black, 0 0 25px green,0 0 20px black, 0 0 200px green;
+    border-radius: 30px;
+    font-weight: bolder;
+}
+center button:nth-child(3){
+    background-image: linear-gradient(to right,black, purple,black);
+    box-shadow: 0 0 5px black, 0 0 25px purple,0 0 20px black, 0 0 200px purple;
+    border-radius: 30px;
+    font-weight: bolder;
+}
+center button:nth-child(4){
+    background-image: linear-gradient(to right,black, red,black);
+    box-shadow: 0 0 5px black, 0 0 25px red,0 0 20px black, 0 0 200px red;
+    border-radius: 30px;
+    font-weight: bolder;
+}
+/* @media only screen and (max-height: 600px){
+    footer{
+        display: none;
+    }
+    .space{
+        height: 100vh;
+    }
+} */
+footer{
+    margin-top: 100vh;
+}
+.view{
+    background-image: linear-gradient(to right,black, red,black);
+    box-shadow: 0 0 5px black, 0 0 25px red,0 0 20px black, 0 0 200px red;
+    border-radius: 30px;
+    font-weight: bolder;
+}
+.hide{
+    background-image: linear-gradient(to right,black, blue,black);
+    box-shadow: 0 0 5px black, 0 0 25px blue,0 0 20px black, 0 0 200px blue;
+    border-radius: 30px;
+    font-weight: bolder;
+}
+/* #1 */
+#correct1{
+    display: none;
+}
+#hide1{
+    display: none;
+}
+/* #2 */
+#correct2{
+    display: none;
+}
+#hide2{
+    display: none;
+}
+/* #3 */
+#correct3{
+    display: none;
+}
+#hide3{
+    display: none;
+}
+#correct4{
+    display: none;
+}
+#hide4{
+    display: none;
+}
+pre{
+    font-size: 1rem;
+    text-align: left;
+}
+table,th,td{
+    border: 1px solid;
+    border-collapse: collapse;
+    font-size: 1.5rem;
+}
+
+#correct5{
+    display: none;
+}
+#hide5{
+    display: none;
+}
+#correct6{
+    display: none;
+}
+#hide6{
+    display: none;
+}
+#correct7{
+    display: none;
+}
+#hide7{
+    display: none;
+}
+#correct8{
+    display: none;
+}
+#hide8{
+    display: none;
+}
+#correct9{
+    display: none;
+}
+#hide9{
+    display: none;
+}
+#correct10{
+    display: none;
+}
+#hide10{
+    display: none;
+}

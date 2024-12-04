@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes</title>
+    <link rel="stylesheet" href="notes.css">
+    <link rel="stylesheet" href="home.css">
+</head>
+<body><br>
+    <div>
+        <div class="Algorithm">
+            <h2>Algorithm</h2><br>
+            <p>
+            When the user clicks the green flag/ when the green flag is clicked <br>
+            //Input <br>
+            ask “Enter the first number”<br>
+            enter iNum1<br>
+            ask “Enter the second number”<br>
+            enter iNum2<br>
+            //Processing<br>
+            iSum = iNum1 + iNum2<br>
+            //Output<br>
+            display “The sum is ” + iSum<br>
+            end
+            </p>
+        </div>
+        <br><br><br>
+        <div class="IPO">
+            <h2>IPO(Input Processing Output) table</h2><br>
+            <table>
+                <tr>
+                    <th>I</th>
+                    <th>P</th>
+                    <th>O</th>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>Describe the variable<br>
+                        (sVariable)</strong><br><br>
+                        First number<br>
+                        (iNum1)<br>
+                        Second number<br>
+                        (iNum2)<br><br><br>
+                        <del>Your birth year<br>
+                        (iBirthYear)<br>
+                        Current year<br>
+                        (iCurrentYear)</del>
+                    </td>
+                    <td>
+                        <strong>Formulas OR calculation only</strong><br>
+                        iSum = iNum1 + iNum2<br><br><br>
+                        <del>iAge = iCurrentYear - iBirthYear</del>
+                    </td>
+                    <td>
+                        <strong>Results only<br>
+                        Describe the variable<br>
+                        (sVariable)</strong><br>
+                        The sum<br>
+                        (iSum)<br><br><br>
+                        <del>Your age<br>
+                        (iAge)</del>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <br><br>
+        <div class="javaStructure">
+            <h2>A well stractured code</h2>
+            <p>
+                import java.util.Scanner;<br>
+                public class myClassName<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;{<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;public static void main(String[]args)<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;{<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;<strong>//Constant variables<br><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;//Declare variables<br><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;//Input<br><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;//calculations<br><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;//Outputs</strong><br><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;}<br>
+                }
+            </p>
+        </div>
+        <br><br><br>
+        <div class="public">
+            <h2>Public Class and Public Static Void Main</h2><br>
+            <p>
+                In Java, the public class is a keyword used to declare a class as accessible to all other classes.
+                It means that the class can be accessed from outside the package in which it is defined. For
+                example:<br><br>
+                <strong> 
+                    public class MyClass { <br>
+                    // class members and methods <br>
+                    }<br><br>
+                </strong>
+                The public static void main(String[] args) is the entry point of a Java program. When a Java
+                program is executed, the Java Virtual Machine (JVM) looks for the main method with the
+                following signature:
+            </p>
+            <h2>public static void main(String[] args)</h2><br>
+            <p> 
+                • public: It means that the method is accessible from outside the class.<br>
+                • static: It means that the method belongs to the class and not to any specific instance of the class.<br>
+                • void: It indicates that the method does not return any value.<br>
+                • main: It is the name of the method and serves as the entry point for the program.<br>
+                • (String[] args): It is the parameter passed to the main method, which is an array of strings used to pass arguments to the program when it is executed from the command line.
+            </p>
+        </div>
+        <br><br><br>
+        <div class="syntax">
+            <h2>Camel Casing</h2><br>
+            <p>
+                • Camel casing is a naming convention where the first letter of each word is capitalized except for the first word.<br>
+                • Example: camelCaseExample
+            </p>
+            <h2>Java Syntax</h2><br>
+            <p>
+                • Java syntax refers to the set of rules that defines the combinations of symbols and keywords that are considered to be correctly structured Java programs.
+            </p>
+            <h2>Scanner Class and Object</h2><br>
+            <p>
+                • The Scanner class in Java is used to get user input, and it is part of the java.util package.<br>
+                • To use the Scanner class, you need to create a Scanner object and then use its methods to take input from the user.
+            </p>
+            <h2>Java Data Types</h2><br>
+            <p>
+                • Java has two categories of data types: primitive and non-primitive (reference) data types.<br>
+                • Primitive data types include int, double, char, boolean, etc., while non-primitive data types include classes, arrays, interfaces, etc.<br>
+            </p>
+            <h2>Display and Input Statements</h2><br>
+            <p>    
+                • In Java, the System.out.println() statement is used to display output to the console.<br>
+                • For input, the Scanner class is commonly used to read input from the user.
+            </p>
+            <h2>Variables and Arithmetic/Numerical Operators</h2><br>
+            <p>
+                • Variables are used to store data, and in Java, you need to declare a variable before using it. <br>
+                • Arithmetic operators such as +, -, *, /, and % are used for basic mathematical operations in Java.
+            </p>
+        </div>
+
+    </div><br><br>
+    <div class="inputs">
+        <p>
+            import java.util.Scanner;<br>
+            public class inputs <br>
+                {<br>
+                &nbsp;&nbsp;&nbsp;&nbsp; public static void main(String[]args) <br>
+	            &nbsp;&nbsp;&nbsp;&nbsp;{<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;Scanner sc = new Scanner(System.in);<br><br>
+		
+                &nbsp;&nbsp;&nbsp;&nbsp;//Declare variebles <br>
+		        &nbsp;&nbsp;&nbsp;&nbsp;String sCourseName;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;String sSurname;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;int iAge;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;double rHeight;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;char cFirstLetter;<br><br>
+		
+                &nbsp;&nbsp;&nbsp;&nbsp;//Input <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;System.out.print("Enter your course name :");<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;sCourseName = sc.nextLine();<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;System.out.print("Enter your surname :");<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;sSurname = sc.next();<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;System.out.print("Enter your age :");<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;iAge = sc.nextInt();<br>
+		        &nbsp;&nbsp;&nbsp;&nbsp;System.out.print("Enter your height :");<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;rHeight = sc.nextDouble();<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;System.out.print("Enter your first letter of your name :");<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;cFirstLetter = sc.next().charAt(0);<br><br>
+		
+                &nbsp;&nbsp;&nbsp;&nbsp;//Outputs <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;System.out.println("Hello "+cFirstLetter+" "+sSurname+" your are "+iAge+" years old, "+rHeight+" cm tall, and studying "+sCourseName);<br><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;} <br>
+}
+        </p>
+    </div>
+    <div class="loops">
+        <!-- <p> -->
+            
+        <H1>Loops</H1>
+        <h2>
+            We have 3 loops
+            <ol>
+                <li>
+                    for Loop
+                    <ol>
+                        <li>We use for-loop if we know the number of time it will loop.</li>
+                        <li>Syntax <br>*for(int i=1;i<=5;i++){ //your statements here}*<br>It will loop 5 times</li>
+                    </ol>
+                </li>
+                <li>
+                    while Loop
+                    <ol>
+                        <li>We mostly use it to restrict, preventing user from entering invalid values <br> exaple <br>Enter your test mark :102 <br>Invalid test mark!!! Enter your test mark</li>
+                        <li>Also to excercute certain code if the condition is true</li>
+                        <li>Syntax <br> while(mark<0||mark>100){//Your statements here} <br> It will loop up until the mark value is inrange.</li>
+                    </ol>
+                </li>
+                <li>
+                    do-while
+                    <ol>
+                        <li>We use it to reduce duplicates of statements, can be used to restrict user from entering invalid inputs</li>
+                        <li>use this loop to control invalid inputs only if the prompting text does not chage from the initial text <br>example <br> enter your age : -1 <br> enter your age : 18 <br> you can you this loop</li>
+                        <li>This loop excecute statements inside for the first time without meeting the conditions.</li>
+                        <li>Syntax <br> do{//your statements here}while(age<0); <br> It will loop if the age value is less than 0 <br>Do not forget to terminate after the while condition for this loop only</li>
+                    </ol>
+                </li>
+            </ol>
+        </h2>
+        <!-- </p> -->
+    </div>
+    <div class="conditional">
+        <h1>Conditional statements</h1>
+        <h2>We have 2 different conditional statements</h2>
+        <h2>
+            <ol>
+                <li>
+                    if-statement, it is devided into 4 different formart
+                    <ol>
+                        <li>if(){}</li>
+                        <li>if(){} else{}</li>
+                        <li>if(){} else-if(){} &RightArrowBar; the else-if(){} can be as may as the condition required</li>
+                        <li>if(){} else-if(){} else{} &RightArrowBar; the else-if(){} can be as may as the condition required</li>
+                    </ol>
+                </li>
+                <li>
+                    switch-cases, id is devided in 2 
+                    <ol>
+                        <li>switch(variable){case "value" : //statements here;}</li>
+                        <li>switch(variable){<br>case "value" : //statements here; <br>break; <br>default : //statements here;}</li>
+                        <li>You can have *case "value":* as many as you want</li>
+                        <li>the variable in *switch(variable)* is the one that will be used to test agaist the values on each case</li>
+                    </ol>
+                </li>
+                <li>
+                    <h3>when and where to use the conditional statements</h3>
+                    <ol>
+                        <li>if-statements</li>
+                        <ol>
+                            <li>Range values if(mark>=50 && mark<75){} in switch you will have multiple cases for each value</li>
+                            <li>You can have as may conditions as required</li>
+                        </ol>
+                        <li>
+                            switch-cases
+                        </li>
+                        <ol>
+                            <li>For menus 
+                                <br>case 1://chose 1;
+                                <br>beak; 
+                                <br>case 3: //chose 3;
+                            </li>
+                            <li>For 2 or more values resulting to same output 
+                                <br> case 1: case 2: //1 or 2 was selected;break;
+                            </li>
+                        </ol>
+                    </ol>
+                </li>
+            </ol>
+        </h2>
+    </div>
+    <div class="escape">
+        <h2>
+            Escape sequences
+            <ol>
+                <li>\t for tab(big space)</li>
+                <li>\n for new line</li>
+                <li>\" for double quotes</li>
+                <li>\' for single quote</li>
+            </ol> <br>
+            Formatinf values <br><br>
+            import java.text.DecimalFormart; **from text**<br>
+            DecimalFormart Object = new DecimalFormart("R#,##0.00"); Depends on the format <br><br>
+            To format <br> Object.format(variable)
+        </h2>
+    </div>
+    <div class="stringChar">
+        <h2>
+            Converting Character
+            <li>char initial = 'T';</li>
+            <li>to upper case </li>
+            <li>initial= Character.toUpperCase(initial);</li>
+            <li>to lower case</li>
+            <li>initial= Character.toLowerCase(initial);</li>
+            Testing
+            <li>Convert characters when using the variable to test do not use the (letter=='Y'||letter=='y') unless stated otherwise</li>
+            <li>(Convert to your preference if not said so, they might say convert to upper case)</li>
+            Converting String
+            <li>String name = "Terrence";</li>
+            <li>To upper case</li>
+            <li>name= name.toUpperCase();</li>
+            <li>to lower case </li>
+            <li>name= name.toLowerCase();</li>
+            Comparing string 
+            <li>string1.equals(string2) if they are equal mostly used for password testing</li>
+            <li>string1.equalsIgnoreCase(string2) comparing regardless of the case if user enters a Yes in full</li>
+            <li>string1.compareTo(string2)  compares using the ASCII table values and returns a value(integer)</li>
+            <li>If <0 string1 < string2</li>
+            <li>If >0 string1 > string2</li>
+            <li>If == 0 string1 == string2</li>
+            <li>If found in short questions and write or choose the value that is returned just</li>
+            <li>System.out.println(string1.compareTo(string2)) and it will print out the value, negative,  positive or 0</li>
+        </h2>
+    </div>
+    <div class="nested">
+        <h2>
+            Nested ifs
+<pre>
+    if (true){
+        //Continue 
+        if (true){
+                //do this
+        }
+        else {
+                //do this 
+        }
+    }
+    else if(true){
+        //Continue here
+        if (true) {
+            //Do this
+        }
+    }   
+    else{
+        Do this
+    }
+</pre>
+<li>It is something like that</li>
+<li>If the condition is true continue testing for this and that </li>
+
+
+
+A program for playing a game people must be 18+ and if above 18 ask theirs gender, if male allow to play else display Only For males
+<pre>
+
+System.out.print("Enter your age :");
+int age=scannerObject.nextInt();
+If (age>=18){
+    System.out.print("Enter your gender:");
+    enter gender=scannerObject.next().charAt(0);
+    gender = Character.toUpperCase(gender);
+    If(gender=='M'){
+        System.out.print("You can play");
+    }
+    else if(gender=='F'){
+        System.out.print("Only for males");
+    }
+    else{
+        System.out.print("Invalid gender");
+    }
+}
+else{
+    System.out.print("Under age");
+}
+
+</pre>
+
+<li>NB :else does not have a condition</li>
+        </h2>
+    </div>
+    <br><br><br><br>
+    <footer style="background-color: rgba(157, 204, 219, 0.7); text-align: center;">
+        <h2>2024 &copy All Rights Reserved Designed by Terrence Kgetedi</h2>
+        <p>Email: <a href="mailto:kgetediterrence@gmail.com" style="text-decoration: none; color: white; font-size: x-large;">kgetediterrence@gmail.com</a></p>
+        <p>Phone: <span style="color: white; font-size: x-large;"> +27692957367</span></p>
+        <p>WhatsApp<span style="color: white; font-size: x-large;"> +27692957367</span></p>
+    </footer>
+    <br><br><br><br><br>
+    <br><br><br><br><br>
+    <br><br><br><br><br>
+    <div class="bottom-buttons">
+        <button onclick="quizzes()">QUESTIONS</button>
+        <button onclick="notes()">NOTES</button>
+        <button onclick="home()">HOME</button>
+        <button onclick="videos()">VIDEOS</button>
+        <button onclick="documents()">DOCUMENTS</button>
+    </div> 
+    <script src="notes.js"></script>
+</body>
+</html>

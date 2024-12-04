@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QUIZZES</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="quizzes.css">
+    <style>
+        body div:nth-child(1){
+            height: 100vh;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <center>
+            <button onclick="Q1()">Quizz 1</button>
+            <button onclick="Q2()">Quizz 2</button>
+            <button onclick="Q3()">Quizz 3</button>
+            <button onclick="Q4()">Quizz 4</button>
+        </center>
+        <br><br>
+        <center class="Question">
+            <h1>Question 1</h1>
+            <h2>Write a program that will allow the user to enter their name, surname, course name, current year, age. And display the results. 
+                Make sentence using the variables. Will post results later.</h2>
+            <h1>NOTE : the inputs should be in that order, avoid using any AI, youTube and or websites</h1>
+            <button id="view1" onclick="correction1()" class="view">view</button>
+            <pre id="correct1">
+import java.util.Scanner;
+public class correction
+{
+	public static void main(String[]args)
+	{
+		Scanner sc = new Scanner(System.in);
+		
+		//Declare variables
+		String sName, sSurname, sCourseName;
+		int iCurrentYear, iAge;
+		
+		//Inputs
+		System.out.print("Enter your name :");
+		sName = sc.next();
+		System.out.print("Enter your surname :");
+		sSurname = sc.next();
+		System.out.print("Enter your course name :");
+		sc.nextLine(); //Clear the buffer
+		sCourseName = sc.nextLine();
+		System.out.print("Enter the current year :");
+		iCurrentYear = sc.nextInt();
+		System.out.print("Enter your age :");
+		iAge = sc.nextInt();
+		
+		//Outputs
+		System.out.println("Hello "+ sName +" "+sSurname);
+		System.out.println("Your are "+iAge+" years old in "+ iCurrentYear);
+		System.out.println("You are studying "+sCourseName);
+	}
+}
+            </pre>
+            <button id="hide1" onclick="correction11()" class="hide">hide</button>
+        </center><br>
+        <center class="Question">
+            <h1>Question 2</h1>
+            <h2>Write a program that will calculate your age and display results</h2>
+            <button id="view2" onclick="correction2()" class="view">view</button>
+            <pre id="correct2">
+import java.util.Scanner;
+public class AgeCalculation
+{
+	public static void main(String[]args)
+	{
+		Scanner sc = new Scanner(System.in);
+		
+		//Declare variables
+		int iAge, iCurrentYear, iBirthYear;
+		
+		//Inputs
+		System.out.print("Enter your current birth year :");
+		iBirthYear = sc.nextInt();
+		System.out.print("Enter the current :");
+		iCurrentYear = sc.nextInt();
+		
+		//Perform calculations
+		iAge = iCurrentYear - iBirthYear;
+		
+		//Outputs
+		System.out.print("You are "+iAge+" years old.");
+	}
+}
+            </pre>
+            <button id="hide2" onclick="correction12()" class="hide">hide</button>
+        </center><br>
+        <center class="Question">
+            <h1>Question 3</h1>
+            <h2>Wirte a program that will add, subtract, minus and multiply the two number from the user, and display each results on a new line<br>
+                expexted outputs: <br> 4 + 2 = 6 <br>4 - 2 = 2 <br>4 x 2 = 8 <br>4 / 2 = 2
+            </h2>
+            <button id="view3" onclick="correction3()" class="view">view</button>
+            <pre id="correct3">
+import java.util.Scanner;
+public class calc
+{
+	public static void main(String[]args)
+	{
+		Scanner sc = new Scanner(System.in);
+		
+		//Declare variables
+		int iNum1, iNum2;
+		int iAdd, iMinus, iMultliply, iDivide;
+		
+		//Inputs
+		System.out.print("Enter the first number :");
+		iNum1 = sc.nextInt();
+		System.out.print("Enter the second number :");
+		iNum2 = sc.nextInt();
+		
+		//Perform calculations
+		iAdd = iNum1 + iNum2;
+		iMinus = iNum1 - iNum2;
+		iMultliply = iNum1 * iNum2;
+		iDivide = iNum1 / iNum2;
+		
+		//Outputs
+		System.out.println(iNum1+" + "+iNum2+" = "+iAdd);
+		System.out.println(iNum1+" - "+iNum2+" = "+iMinus);
+		System.out.println(iNum1+" * "+iNum2+" = "+iMultliply);
+		System.out.println(iNum1+" / "+iNum2+" = "+iDivide); 
+		
+		//NOTE: divide will return a whole number as the program accepts integers only
+	}
+}
+            </pre>
+            <button id="hide3" onclick="correction13()" class="hide">hide</button>
+        </center>
+
+        <center class="Question">
+        <h1>Question 4</h1>
+        <h2>
+            A school receives two containers of sweets, each containing a certain kilogram of sweets (read the mass of each from the keyboard). How many small packets of sweets of 85g each can be packed using the sweets from both containers? <br>
+            Write an IPO to solve the problem
+        </h2>
+        <button id="view4" onclick="correction4()" class="view">view</button>
+        <pre id="correct4">
+            <table>
+                <tr>
+                    <th>Input</th>
+                    <th>processing</th>
+                    <th>Output</th>
+                </tr>
+                <tr>
+                    <td>
+//Costants
+PACKET_SIZE = 85
+
+//Inputs
+mass of first container
+(rMassContainer1)
+mass of second container
+(rMassContainer2)
+                    </td>
+                    <td>
+rTotalMass = rMassContainer1 +rMassContainer2
+rMassInGrams = rTotalMass * 1000
+iNumPackets = rMassInGrams / PACKET_SIZE
+                    </td>
+                    <td>
+Total mass
+(rTotalMass)
+Number of packets
+(iNumPackets)
+                    </td>
+                </tr>
+            </table>
+            <h2>
+                When the user clicks the green flag
+
+                    //Constants
+                    PACKET_SIZE = 85
+
+                    //Input 
+                    ask "Enter the mass of the first container"
+                    enter rMassContainer1
+                    ask enter the mass of the second container
+                    enter rMassContainer2
+                    
+                    //processing
+                    rTotalMass = rMassContainer1 +rMassContainer2
+                    rMassInGrams = rTotalMass * 1000
+                    iNumPackets = rMassInGrams / PACKET_SIZE
+
+                    //Output
+                    display "The total mass "+ rTotalMass
+                    display "The number of packets filled "+ iNumPackets
+
+                end
+            </h2>
+            <h2>NOTE mass input is in kilograms and we should convert to grams</h2>
+        </pre>
+        <button id="hide4" onclick="correction14()" class="hide">hide</button>
+        </center>
+        <center class="Question">
+            <h1>Question</h1>
+            <h2>Write a program that will determine the if determine the student qualifies to write an exam <br>
+                The user should enter 7 tasks marks, 3 semesters which weighs 20% each and 4 class test weighs 10% each
+                40% minimum to qualify and the year mark contribute 50% and another 50% from  exam
+                if the student doesn't qualify, show he/she doesn't qualify
+                if the student qualifies show how much he/she must get to pass the module, 50% to qualify</h2>
+            <button id="view5" onclick="correction5()" class="view">view</button>
+            <pre id="correct5">
+                <h2>
+import java.util.Scanner;
+public class marks
+{//Start class
+	public static void main(String[]args)
+	{//Start main method
+		Scanner kb = new Scanner(System.in);
+		
+		//Constant variables
+		final double ST_PERCERNTAGE = 0.2, CT_PERCENTAGE = 0.1, QUALIFY_MARK = 40;
+		
+		//declare variables
+		int mark1ST,mark2ST,mark3ST,mark1CT,mark2CT,mark3CT,mark4CT;
+		double STtotal,CTtotal, predicate, percentFromExam, STtotalPercentage, CTtotalPercentage;
+		
+		//input
+		System.out.print("Enter your semester test 1 mark :");
+		mark1ST = kb.nextInt();
+		System.out.print("Enter your semester test 2 mark :");
+		mark2ST = kb.nextInt();
+		System.out.print("Enter your semester test 3 mark :");
+		mark3ST = kb.nextInt();
+		System.out.print("Enter your class test test 1 mark :");
+		mark1CT = kb.nextInt();
+		System.out.print("Enter your class test test 2 mark :");
+		mark2CT = kb.nextInt();
+		System.out.print("Enter your class test test 3 mark :");
+		mark3CT = kb.nextInt();
+		System.out.print("Enter your class test test 4 mark :");
+		mark4CT = kb.nextInt();
+		
+		
+		//Processing 
+		STtotal = mark1ST*ST_PERCERNTAGE + mark2ST*ST_PERCERNTAGE + mark3ST*ST_PERCERNTAGE;
+		CTtotal = mark1CT*CT_PERCENTAGE + mark2CT*CT_PERCENTAGE + mark3CT*CT_PERCENTAGE + mark4CT*CT_PERCENTAGE;
+		
+		predicate = CTtotal + STtotal;
+		
+		//Output 
+		//Conditions
+		if(predicate>=40){
+			//calculation for exam minimum exam mark 
+			percentFromExam = 100 - predicate;
+			
+			//Output for qualifying
+			System.out.println("You qualifying with "+predicate+"%");
+			System.out.print("You need "+percentFromExam+"% in order for you to pass the module");
+		}
+		else{
+			
+			//Output for not qualifying
+			System.out.println("You don't qualify!!!");
+			System.out.print("We will meet next year same time, same place, same lecture.");
+		}
+	
+	
+	}//end main method
+}//end class
+                </h2>
+            </pre>
+            <button id="hide5" onclick="correction15()" class="hide">hide</button>
+        </center>
+        <!-- <center class="Question">
+            <h1>Question</h1>
+            <h2>The question</h2>
+            <button id="view[]" onclick="correction[]()" class="view">view</button>
+            <pre id="correct[]">
+                <button id="hide[]" onclick="correction[]()" class="hide">hide</button>
+            </pre>
+        </center> -->
+        
+    </div>
+
+
+    <div class="space" style="margin-bottom: 300vh;"></div>
+    <br><br><br><br>
+    <footer style="background-color: rgba(157, 204, 219, 0.7); text-align: center; margin-top: 200vh;">
+        <h2>2024 &copy All Rights Reserved Designed by Terrence Kgetedi</h2>
+        <p>Email: <a href="mailto:kgetediterrence@gmail.com" style="text-decoration: none; color: white; font-size: x-large;">kgetediterrence@gmail.com</a></p>
+        <p>Phone: <span style="color: white; font-size: x-large;"> +27692957367</span></p>
+        <p>WhatsApp<span style="color: white; font-size: x-large;"> +27692957367</span></p>
+    </footer>
+    <br><br><br><br><br><br>
+    <div class="bottom-buttons">
+        <button onclick="quizzes()">QUESTIONS</button>
+        <button onclick="notes()">NOTES</button>
+        <button onclick="home()">HOME</button>
+        <button onclick="videos()">VIDEOS</button>
+        <button onclick="documents()">DOCUMENTS</button>
+    </div>   
+    <script src="quizzes.js"></script>
+</body>
+</html>
